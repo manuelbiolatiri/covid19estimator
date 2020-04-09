@@ -1,6 +1,5 @@
-const covid19ImpactEstimator = () => {
+const covid19ImpactEstimator = (data) => {
 
-  const covidDataTypes = {
     data: {
       region: {
         name: 'Africa',
@@ -22,7 +21,7 @@ const covid19ImpactEstimator = () => {
       currentlyInfected: 'covidDataTypes.data.reportedCases * 50',
       infectionsByRequestedTime: 'currentlyInfected * 512'
     }
-  }
+  
 
   return {
     data: {},
