@@ -3,12 +3,12 @@ const covid19ImpactEstimator = () => {
   const covidDataTypes = {
     data: {
       region: {
-        name: "Africa",
+        name: 'Africa',
         avgAge: 19.7,
         avgDailyIncomeInUSD: 5,
         avgDailyIncomePopulation: 0.71
       },
-      periodType: "days",
+      periodType: 'days',
       timeToElapse: 58,
       reportedCases: 674,
       population: 66622705,
@@ -25,10 +25,10 @@ const covid19ImpactEstimator = () => {
   }
 
   return {
-          data: {},
-          impact: {},
-          severeImpact: {}
-        } 
+    covidDataTypes.data: {},
+    covidDataTypes.impact: {},
+    covidDataTypes.severeImpact: {}
+    } 
 };
 
 export default covid19ImpactEstimator;
