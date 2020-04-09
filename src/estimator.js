@@ -25,9 +25,9 @@ const covid19ImpactEstimator = () => {
   }
 
   return {
-    covidDataTypes.data: {},
-    covidDataTypes.impact: {},
-    covidDataTypes.severeImpact: {}
+    data: {},
+    impact: {},
+    severeImpact: {}
     } 
 };
 
