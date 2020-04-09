@@ -1,4 +1,4 @@
-const covid19ImpactEstimator = ({covidDataTypes}) => {
+const covid19ImpactEstimator = () => {
 
   const covidDataTypes = {
     data: {
