@@ -1,10 +1,6 @@
 const covid19ImpactEstimator = (data) => {
-  if (!data) {
-    return null;
-  }
 
-  const reportedCases = data.reportedCases;
-  const covidDataTypes = {
+  const data = {
     region: {
       name: "Africa",
       avgAge: 19.7,
