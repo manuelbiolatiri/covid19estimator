@@ -1,5 +1,5 @@
-const estimator = (req, res) => {
-  res.json(console.log);
+const estimator = () => {
+
 };
 
 module.exports = { estimator };

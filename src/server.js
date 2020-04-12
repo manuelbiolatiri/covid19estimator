@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const PORT = 3000 || process.env.PORT;
 
 app.get('/', (req, res) => {
-    res.json({ message: 'success welcome to api/v1 version' });
+  res.json({ message: 'success welcome to api/v1 version' });
 });
 app.use('/api/v1/', router);
 // 404 Error

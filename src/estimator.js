@@ -6,7 +6,7 @@ const covid19ImpactEstimator = (data) => {
     totalHospitalBeds,
     region
   } = data;
-  // you are actually correct
+
   let factor;
   let period;
   if (periodType === 'days') {
@@ -71,4 +71,4 @@ const covid19ImpactEstimator = (data) => {
   };
 };
 
-export default covid19ImpactEstimator;
+module.exports = covid19ImpactEstimator;
