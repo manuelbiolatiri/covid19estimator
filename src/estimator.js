@@ -6,6 +6,7 @@ const covid19ImpactEstimator = (data) => {
     totalHospitalBeds,
     region
   } = data;
+  // you are actually correct
   let factor;
   let period;
   if (periodType === 'days') {
@@ -18,6 +19,7 @@ const covid19ImpactEstimator = (data) => {
     factor = Math.floor((timeToElapse * 30) / 3);
     period = timeToElapse * 30;
   }
+
   // impact estimations
   const impactCurrentlyInfected = reportedCases * 10;
   const impactInfectionsByRequestedTime = impactCurrentlyInfected * (2 ** factor);
