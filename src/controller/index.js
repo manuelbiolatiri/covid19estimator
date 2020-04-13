@@ -1,4 +1,4 @@
-const { Response, XMLResponse } = require('../utils').default;
+const { Response, XMLResponse } = require('../utils');
 const covid19ImpactEstimator = require('../estimator');
 
 

@@ -18,7 +18,7 @@ class XMLResponse {
     this.data = data;
   }
 }
-export default {
+module.exports = {
   ResponseError,
   Response,
   XMLResponse
