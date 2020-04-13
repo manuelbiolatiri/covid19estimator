@@ -4,21 +4,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="Emmanuel Biolatiri" content="Owner">
-  <meta name="theme-color" content="#000000">
-  <meta name="keywords" content="Building for SDGs">
+  <meta name="keywords" content="SDG">
+  <meta name="keywords" content="Andela Build for SDGs">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="the virus pandemic | covid-19">
-  <link href="index.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Covid-19 Estimator</title>
 </head>
 <body>
+  <header>
     <nav id="navv" class="">
       <a class="" href="#">BuildforSDG</a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+  </header>
+  <section id="content">
     <h6>This project enables me to endeavor helping society and leaders prepare for the real big issue 
         of COVID-19, which is its effect on lives, health systems, supply chains, and the economy</h6>
     <p><STRONG>THE COVID-19 ESTIMATOR MACHINE</STRONG></p>
@@ -27,35 +30,45 @@
         <label for="data-region">Region</label>
         <input type="text" data-region="Region" name="Population" id="data-region"
           placeholder="Africa" required>
+
         <label for="data-avgAge">Region Average age</label>
         <input type="text" avgAge ="population" name="Average Age" id="data-avgAge"
           placeholder="Enter average age" required>
+
         <label for="data-avgDailyIncomePopulation">Average Daily Income Population (USD):</label>
         <input type="text" data-avgDailyIncomePopulation ="population" name="Average Age"
           id="data-avgDailyIncomePopulation" placeholder="Enter average income of population" required>
+
         <label for="data-population">Population:</label>
         <input type="text" data-population="population" name="Population"
-          id="data-population"
-          placeholder="Enter population" required>
+          id="data-population" placeholder="Enter population" required>
+
         <label for="data-time-to-elapse">Time To Elapse:</label>
         <input type="text" data-time-to-elapse="timeToElapse" name="Period"
           id="data-time-to-elapse" placeholder="Enter Time" required>
+
         <label for="data-reported-cases">Reported Cases:</label>
         <input type="text" data-reported-cases="reportedCases" name="Reported Cases"
           id="data-reported-cases" placeholder="Number of reported cases" required>
+
         <label for="data-total-hospital-beds">Total Hospital Beds:</label>
         <input type="text" data-total-hospital-beds="totalHospitalBeds" name="Beds"
           id="data-total-hospital-beds" placeholder="Enter availaible beds" required>
+
         <label for="data-period-type">Period Type:</label><br>
-        <select data-period-type="periodType"id="data-period-type"
+        <select data-period-type="periodType" id="data-period-type"
           name="periodType" required>
           <option value="Days">Days</option>
           <option value="Weeks">Weeks</option>
           <option value="Months">Months</option>
         </select>
-        <input type="submit" value="Submit">
+
+        <input type="submit" data-go-estimate="data-go-estimate"  value="Estimate" id="data-go-estimate">
       </form>
-      <h6>Andela BuildforSDGs | Made by Emmanuel Biolatiri &copy2020</h6>
     </div>
+  </section>
+    <footer>
+      <h6>Andela BuildforSDGs | Made by Emmanuel Biolatiri &copy2020</h6>
+    </footer>
 </body>
 </html>
