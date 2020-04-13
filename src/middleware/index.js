@@ -11,8 +11,8 @@ function hasAllFields(request, response, next) {
     population,
     totalHospitalBeds
   } = request.body;
-  if (!region || !periodType || !timeToElapse || !reportedCases || !population ||
-    !totalHospitalBeds) {
+  if (!region || !periodType || !timeToElapse || !reportedCases || !population
+    || !totalHospitalBeds) {
     if (request.url.includes('xml') || request.headers['content-type'] === 'application/xml') {
       return response.status(401).send(builder.buildObject({ error: true, message: 'All fields are required' }));
     }
