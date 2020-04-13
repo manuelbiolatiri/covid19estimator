@@ -11,77 +11,87 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <title>Covid-19 Estimator</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
+<body class="overflow-hidden" style="background-color: #3aafa9;">
+    <nav class="navbar navbar-expand-lg  text-white">
         <div class="container">
-            <a class="navbar-brand" href="#">BuildforSDG</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-white" href="#">BuildforSDG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Estimate</a>
+                  <a class="nav-link text-dark" href="#">Estimate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link text-dark" href="#">About</a>
                 </li>
               </ul>
             </div>
         </div>
     </nav>
     <div class="row mt-5">
-        <div class="col-md-6 m-auto bg-secondary rounded-top">
-            <h2 class="text-white text-center">Covid-19 Estimator Machine</h2>
+        <div class="col-md-6 m-auto rounded-top" style="background-color: #2b7a78;">
+            <h2 class="text-white text-center">COVID-19 ESTIMATOR MACHINE</h2>
             <form action="" method="post">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                       <div class="form-group">
                           <label for="data-region">Region:</label><br>
-                        <input type="text" data-region="Region" class="form-control" name="Population" id="data-region" placeholder="Africa" required>
+                        <input type="text" data-region="Region" class="form-control" name="Population" id="data-region"
+                        placeholder="Africa" required>
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                       <div class="form-group">
                         <label for="data-avgAge">Region Average age:</label><br>
-                        <input type="text" avgAge ="population" class="form-control" name="Average Age" id="data-avgAge" placeholder="Enter average age" required>
+                        <input type="text" avgAge ="population" class="form-control" name="Average Age" id="data-avgAge"
+                        placeholder="Enter average age" required>
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                       <div class="form-group">
                         <label for="data-avgDailyIncomePopulation">Average Daily Income Population (USD):</label><br>
-                        <input type="text" data-avgDailyIncomePopulation ="population" class="form-control" name="Average Age" id="data-avgDailyIncomePopulation" placeholder="Enter average income of population" required>
+                        <input type="text" data-avgDailyIncomePopulation ="population" class="form-control"name="Average Age"
+                        id="data-avgDailyIncomePopulation" placeholder="Enter average income of population" required>
                       </div>
                   </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="form-group">
                           <label for="data-population">Population:</label><br>
-                          <input type="text" data-population="population" class="form-control" name="Population"id="data-population" placeholder="Enter population" required>
+                          <input type="text" data-population="population" class="form-control" name="Population"
+                          id="data-population"
+                          placeholder="Enter population" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="form-group">
                           <label for="data-time-to-elapse">Time To Elapse:</label><br>
-                          <input type="text" data-time-to-elapse="timeToElapse" class="form-control" name="Period" id="data-time-to-elapse" placeholder="Enter Time" required>
+                          <input type="text" data-time-to-elapse="timeToElapse" class="form-control" name="Period"
+                          id="data-time-to-elapse" placeholder="Enter Time" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="form-group">
                           <label for="data-reported-cases">Reported Cases:</label><br>
-                          <input type="text" data-reported-cases="reportedCases" name="Reported Cases" class="form-control" id="data-reported-cases" placeholder="Number of reported cases" required>
+                          <input type="text" data-reported-cases="reportedCases" name="Reported Cases" class="form-control"
+                          id="data-reported-cases" placeholder="Number of reported cases" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="form-group">
                           <label for="data-total-hospital-beds">Total Hospital Beds:</label><br>
-                          <input type="text" data-total-hospital-beds="totalHospitalBeds" class="form-control" name="Beds" id="data-total-hospital-beds" placeholder="Enter availaible beds" required>
+                          <input type="text" data-total-hospital-beds="totalHospitalBeds" class="form-control" name="Beds"
+                          id="data-total-hospital-beds" placeholder="Enter availaible beds" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 m-auto">
                         <div class="form-group">
                           <label for="data-period-type">Period Type:</label><br>
-                          <select data-period-type="periodType" class="form-control" id="data-period-type" name="periodType" required>
+                          <select data-period-type="periodType" class="form-control" id="data-period-type"
+                          name="periodType" required>
                             <option value="" disabled selected>Select PeriodType</option>
                             <option value="Days">Days</option>
                             <option value="Weeks">Weeks</option>
@@ -90,14 +100,15 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                      <button type="submit" class="btn btn-info mb-5 w-100" name="data-go-estimate" value="">Estimate</button>
+                      <button type="submit" class="btn btn-info mb-5 bg-dark text-white w-100" name="data-go-estimate" value="">Estimate</button>
                     </div>
                 </div>
             </form>
             <p class="text-center text-white">Andela BuildforSDG | Made by Emmanuel Biolatiri &copy2020</p>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="src/estimator.js"></script>
